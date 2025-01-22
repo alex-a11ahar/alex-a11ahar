@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Student Portfolio</title>
+    <title>Home - Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+            <div class="logo">My Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Hello!</h2>
-            <p>I'm a college student passionate about technology and learning. Check out my projects and experiences!</p>
+        <section class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Discover my journey and projects as a college student passionate about technology and innovation.</p>
+            <a href="projects.html" class="btn">Explore Projects</a>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <p>&copy; 2025 Your Name | All Rights Reserved.</p>
     </footer>
-    <button id="scrollToTop" style="display: none;">⬆ Top</button>
+    <button id="backToTop">⬆ Back to Top</button>
     <script src="js/script.js"></script>
 </body>
 </html>
