@@ -1,68 +1,48 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+/* About Section */
+#about {
+    margin-bottom: 2rem;
 }
 
-header {
-    background: #0078d7;
-    color: white;
-    text-align: center;
+.project-highlight {
+    background: #f9f9f9;
     padding: 1rem;
-}
-
-header h1 {
-    margin: 0;
-}
-
-main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem;
-    background: white;
     border-radius: 5px;
+    border: 1px solid #ddd;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+.project-highlight h3 {
     color: #0078d7;
 }
 
-#repo-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+.project-highlight .blur-text {
+    filter: blur(5px);
+    transition: filter 0.3s ease;
 }
 
-@media (min-width: 600px) {
-    #repo-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.project-highlight .blur-text.show {
+    filter: blur(0);
 }
 
-.repo {
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background: #fafafa;
-}
-
-.repo h3 {
-    margin: 0 0 0.5rem;
-}
-
-.repo a {
-    text-decoration: none;
-    color: #0078d7;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-    background: #333;
+.project-highlight button {
+    background: #0078d7;
     color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.project-highlight button:hover {
+    background: #005bb5;
+}
+
+.project-highlight a {
+    color: #0078d7;
+    text-decoration: none;
+}
+
+.project-highlight a:hover {
+    text-decoration: underline;
 }

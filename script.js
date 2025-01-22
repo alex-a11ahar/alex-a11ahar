@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const repoList = document.getElementById("repo-list");
     const username = "your-github-username"; // Replace with your GitHub username
 
+    // Fetch and display GitHub repositories
     fetch(`https://api.github.com/users/${username}/repos`)
         .then(response => response.json())
         .then(data => {
@@ -19,4 +20,15 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Error fetching repositories:", error);
             repoList.innerHTML = `<p>Unable to load repositories at this time.</p>`;
         });
+
+    // Toggle blur effect for SolarEye description
+    const blurButton = document.querySelector(".toggle-blur");
+    const blurText = document.querySelector(".blur-text");
+
+    blurButton.addEventListener("click", () => {
+        blurText.classList.toggle("show");
+        blurButton.textContent = blurText.classList.contains("show")
+            ? "Hide Details"
+            : "Show Details";
+    });
 });

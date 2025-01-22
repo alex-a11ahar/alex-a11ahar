@@ -9,19 +9,39 @@
 <body>
     <header>
         <h1>My GitHub Portfolio</h1>
-        <p>Welcome! Here are the repositories from my GitHub account.</p>
+        <p>Welcome! Explore my GitHub projects below.</p>
     </header>
+
     <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I am an Electrical Engineering student with a passion for technology and innovation. Here is one of my key projects:</p>
+            <div class="project-highlight">
+                <h3>SolarEye Security System</h3>
+                <p class="blur-text">
+                    SolarEye is an advanced solar-powered security system designed for smart homes. It features real-time monitoring, motion detection, and remote control.
+                </p>
+                <button class="toggle-blur">Show Details</button>
+                <p>
+                    <a href="https://github.com/alex-a11ahar/SolarEye-Security-System.git" target="_blank">View Project on GitHub</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
         <section id="projects">
             <h2>Projects</h2>
             <div id="repo-list">
-                <!-- Repositories will be displayed here -->
+                <!-- GitHub Repositories will be fetched dynamically -->
             </div>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2025 Your Name</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
