@@ -1,48 +1,47 @@
-/* About Section */
-#about {
-    margin-bottom: 2rem;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-.project-highlight {
-    background: #f9f9f9;
-    padding: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
 }
 
-.project-highlight h3 {
-    color: #0078d7;
+header h1 {
+    margin: 0;
 }
 
-.project-highlight .blur-text {
-    filter: blur(5px);
-    transition: filter 0.3s ease;
+header nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-.project-highlight .blur-text.show {
-    filter: blur(0);
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
 }
 
-.project-highlight button {
-    background: #0078d7;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 1rem;
-}
-
-.project-highlight button:hover {
-    background: #005bb5;
-}
-
-.project-highlight a {
-    color: #0078d7;
+header nav ul li a {
+    color: #fff;
     text-decoration: none;
 }
 
-.project-highlight a:hover {
-    text-decoration: underline;
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+main {
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 5px;
 }
