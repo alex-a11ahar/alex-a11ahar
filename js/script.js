@@ -1,34 +1,47 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const repoList = document.getElementById("repo-list");
-    const username = "your-github-username"; // Replace with your GitHub username
+    const homeGreeting = document.querySelector("h2");
+    const currentHour = new Date().getHours();
+    let greeting = "Hello!";
+    if (currentHour < 12) {
+        greeting = "Good Morning!";
+    } else if (currentHour < 18) {
+        greeting = "Good Afternoon!";
+    } else {
+        greeting = "Good Evening!";
+    }
+    if (homeGreeting) {
+        homeGreeting.textContent = `${greeting} Welcome to My Portfolio!`;
+    }
+});
 
-    // Fetch and display GitHub repositories
-    fetch(`https://api.github.com/users/${username}/repos`)
-        .then(response => response.json())
-        .then(data => {
-            data.forEach(repo => {
-                const repoDiv = document.createElement("div");
-                repoDiv.className = "repo";
-                repoDiv.innerHTML = `
-                    <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
-                    <p>${repo.description || "No description available."}</p>
-                `;
-                repoList.appendChild(repoDiv);
-            });
-        })
-        .catch(error => {
-            console.error("Error fetching repositories:", error);
-            repoList.innerHTML = `<p>Unable to load repositories at this time.</p>`;
+document.addEventListener("DOMContentLoaded", () => {
+    const projectTitles = document.querySelectorAll(".project-title");
+    projectTitles.forEach((title) => {
+        title.addEventListener("click", () => {
+            const details = title.nextElementSibling;
+            if (details) {
+                details.style.display = details.style.display === "block" ? "none" : "block";
+            }
         });
-
-    // Toggle blur effect for SolarEye description
-    const blurButton = document.querySelector(".toggle-blur");
-    const blurText = document.querySelector(".blur-text");
-
-    blurButton.addEventListener("click", () => {
-        blurText.classList.toggle("show");
-        blurButton.textContent = blurText.classList.contains("show")
-            ? "Hide Details"
-            : "Show Details";
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const scrollToTopBtn = document.getElementById("scrollToTop");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    });
+
+    scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    });
+});
+
