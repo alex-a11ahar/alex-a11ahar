@@ -15,7 +15,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-I'm an **Electrical Engineering Student** at A&M with a passion for **Data Science** and **Embedded Hardware Design**. I’m exploring ways to optimize hardware for performance and efficiency, focusing on designing embedded systems and accelerating tasks through specialized hardware components like GPUs, FPGAs, and custom ICs. I aimto bridge the gap between software and hardware, incorporating advanced models to create high-performance, power-efficient solutions.
+I'm an **Electrical Engineering Student** at A&M with a passion for **Data Science** and **Embedded Hardware Design**. I’m exploring ways to optimize hardware for performance and efficiency, focusing on designing embedded systems and accelerating tasks through specialized hardware components like GPUs, FPGAs, and custom ICs. I aim to bridge the gap between software and hardware, incorporating advanced models to create high-performance, power-efficient solutions.
 
 ## Interests
 
