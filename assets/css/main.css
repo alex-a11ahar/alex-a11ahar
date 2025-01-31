@@ -2051,6 +2051,44 @@ input, select, textarea {
 			padding: 1em 0 0 1em;
 		}
 
+/* Social Icons */
+.icons {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.icons li {
+	margin: 0 0.5em;
+}
+
+.icons a {
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	line-height: 2em;
+	text-align: center;
+	border-radius: 50%;
+	background-color: #333;
+	color: #fff;
+	transition: background-color 0.3s ease;
+}
+
+.icons a:hover {
+	background-color: #555;
+}
+
+/* Specific Icon Colors */
+.icons .fa-linkedin {
+	background-color: #0077b5; /* LinkedIn Blue */
+}
+
+.icons .fa-linkedin:hover {
+	background-color: #005582; /* Darker LinkedIn Blue */
+}
+
 /* Form */
 
 	form {
