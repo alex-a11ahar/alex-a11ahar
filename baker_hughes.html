@@ -119,10 +119,21 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>SolarEye</h1>
-							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-							<a href="https://github.com/your-repository" target="_blank" rel="noopener noreferrer">GitHub-Repository</a>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
+							<h1>Baker Hughes Data Downsampling</h1>
+							<a href="https://github.com/alex-a11ahar/BakerHughes/tree/main" target="_blank" rel="noopener noreferrer">GitHub-Repository</a>
+							<p>
+								This project explores advanced data downsampling techniques to efficiently reduce large datasets while preserving key statistical properties. 
+								The dataset, containing frequency (FREQ) and power (POWER) measurements, is analyzed using exploratory data analysis (EDA) techniques like scatter plots, hexbin plots, and Kernel Density Estimation (KDE) to identify density patterns. 
+								Two distinct downsampling methods are implemented: uniform grid-based downsampling, which ensures even coverage across the dataset, and high-density clustering-based downsampling, which prioritizes retaining critical high-density regions using K-Means and Gaussian Mixture Model (GMM) clustering. 
+								The project also applies Pearson correlation and nearest neighbor analysis to evaluate the effectiveness of each approach.
+							</p>
+
+							<p>
+								Results show that uniform downsampling maintains even coverage but may discard high-density regions, while high-density clustering-based downsampling better retains essential patterns at the cost of increased computation. 
+								The Elbow Method and Bayesian Information Criterion (BIC) determine the optimal number of clusters for K-Means and GMM, respectively. 
+								Heatmap comparisons and correlation analysis confirm that the clustering-based approach achieves a 99.99% similarity in cluster density distributions with the original dataset.
+								This project demonstrates the effectiveness of intelligent data reduction strategies, with potential applications in signal processing, anomaly detection, and industrial data science.
+							</p>
 						</div>
 					</div>
 
