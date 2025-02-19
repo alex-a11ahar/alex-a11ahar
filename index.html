@@ -12,7 +12,7 @@
             .dark-mode-toggle {
                 font-size: 1.5em;
                 cursor: pointer;
-                margin-right: 1em;
+                margin-right: 1.5em;
             }
             /* Center the footer icons */
             #footer .inner {
@@ -30,6 +30,46 @@
             }
             #footer .icons li {
                 margin: 0 0.5em;
+            }
+
+            /* Dark Mode */
+            body.dark-mode {
+                background-color: #121212;
+                color: #ffffff;
+            }
+
+            body.dark-mode a {
+                color: #ffffff; /* Keep links white */
+            }
+
+            body.dark-mode .cta-button {
+                background-color: #bb86fc;
+                color: #ffffff; /* Keep button text white */
+                text-shadow: none; /* Remove any text shadow */
+            }
+
+            body.dark-mode .tiles .style1,
+            body.dark-mode .tiles .style2,
+            body.dark-mode .tiles .style3,
+            body.dark-mode .tiles .style4,
+            body.dark-mode .tiles .style5,
+            body.dark-mode .tiles .style6 {
+                background-color: #1e1e1e;
+                color: #ffffff; /* Keep tile text white */
+            }
+
+            body.dark-mode .tiles .style1 .content,
+            body.dark-mode .tiles .style2 .content,
+            body.dark-mode .tiles .style3 .content,
+            body.dark-mode .tiles .style4 .content,
+            body.dark-mode .tiles .style5 .content,
+            body.dark-mode .tiles .style6 .content {
+                color: #ffffff; /* Keep tile content text white */
+            }
+
+            body.dark-mode #footer {
+                background-color: #1e1e1e;
+                color: #ffffff;
             }
         </style>
 	</head>

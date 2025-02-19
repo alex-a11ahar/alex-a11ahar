@@ -3374,12 +3374,12 @@ body.dark-mode {
 }
 
 body.dark-mode a {
-    color: #bb86fc;
+    color: #ffffff; /* Keep links white */
 }
 
 body.dark-mode .cta-button {
     background-color: #bb86fc;
-    color: #121212;
+    color: #ffffff; /* Keep button text white */
 }
 
 body.dark-mode .tiles .style1,
@@ -3389,7 +3389,7 @@ body.dark-mode .tiles .style4,
 body.dark-mode .tiles .style5,
 body.dark-mode .tiles .style6 {
     background-color: #1e1e1e;
-    color: #ffffff;
+    color: #ffffff; /* Keep tile text white */
 }
 
 body.dark-mode .tiles .style1 .content,
@@ -3398,7 +3398,7 @@ body.dark-mode .tiles .style3 .content,
 body.dark-mode .tiles .style4 .content,
 body.dark-mode .tiles .style5 .content,
 body.dark-mode .tiles .style6 .content {
-    color: #ffffff;
+    color: #ffffff; /* Keep tile content text white */
 }
 
 body.dark-mode #footer {
