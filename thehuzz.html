@@ -10,7 +10,73 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Style for the crescent moon icon */
+			.dark-mode-toggle {
+				font-size: 1.5em;
+				cursor: pointer;
+				margin-right: 1.5em;
+			}
+			/* Center the footer icons */
+			#footer .inner {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				height: 100%;
+			}
+			#footer .icons {
+				display: flex;
+				justify-content: center;
+				padding: 0;
+				list-style: none;
+			}
+			#footer .icons li {
+				margin: 0 0.5em;
+			}
+
+			/* Dark Mode */
+			body.dark-mode {
+				background-color: #121212;
+				color: #ffffff;
+			}
+
+			body.dark-mode a {
+				color: #ffffff; /* Keep links white */
+			}
+
+			body.dark-mode .cta-button {
+				background-color: #bb86fc;
+				color: #ffffff; /* Keep button text white */
+				text-shadow: none; /* Remove any text shadow */
+			}
+
+			body.dark-mode .tiles .style1,
+			body.dark-mode .tiles .style2,
+			body.dark-mode .tiles .style3,
+			body.dark-mode .tiles .style4,
+			body.dark-mode .tiles .style5,
+			body.dark-mode .tiles .style6 {
+				background-color: #1e1e1e;
+				color: #ffffff; /* Keep tile text white */
+			}
+
+			body.dark-mode .tiles .style1 .content,
+			body.dark-mode .tiles .style2 .content,
+			body.dark-mode .tiles .style3 .content,
+			body.dark-mode .tiles .style4 .content,
+			body.dark-mode .tiles .style5 .content,
+			body.dark-mode .tiles .style6 .content {
+				color: #ffffff; /* Keep tile content text white */
+			}
+
+			body.dark-mode #footer {
+				background-color: #1e1e1e;
+				color: #ffffff;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -19,15 +85,16 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="inner">
-
+							
 							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/home.svg" alt="" /></span><span class="title">Home</span>
-								</a>
+							<a href="index.html" class="logo">
+								<span class="title">Home</span>
+							</a>
 
 							<!-- Nav -->
 								<nav>
 									<ul>
+										<li><i id="dark-mode-toggle" class="fas fa-moon dark-mode-toggle"></i></li>
 										<li><a href="#menu">Menu</a></li>
 									</ul>
 								</nav>
@@ -85,6 +152,12 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				// Toggle dark mode
+				document.getElementById('dark-mode-toggle').addEventListener('click', function() {
+					document.body.classList.toggle('dark-mode');
+				});
+			</script>
 
 	</body>
 </html>
