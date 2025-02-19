@@ -3365,3 +3365,43 @@ input, select, textarea {
 			}
 
 		}
+
+/* Dark Mode */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode a {
+    color: #bb86fc;
+}
+
+body.dark-mode .cta-button {
+    background-color: #bb86fc;
+    color: #121212;
+}
+
+body.dark-mode .tiles .style1,
+body.dark-mode .tiles .style2,
+body.dark-mode .tiles .style3,
+body.dark-mode .tiles .style4,
+body.dark-mode .tiles .style5,
+body.dark-mode .tiles .style6 {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .tiles .style1 .content,
+body.dark-mode .tiles .style2 .content,
+body.dark-mode .tiles .style3 .content,
+body.dark-mode .tiles .style4 .content,
+body.dark-mode .tiles .style5 .content,
+body.dark-mode .tiles .style6 .content {
+    color: #ffffff;
+}
+
+body.dark-mode #footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
